@@ -8,4 +8,6 @@ def test_brazilian_jobs():
     for job in dict_jobs:
         if 'title' in job and 'salary' in job and 'type' in job:
             expected_keys = True
+        else:
+            expected_keys = False
     assert expected_keys is True
